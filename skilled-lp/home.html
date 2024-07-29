@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240729115519">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo"><img src="img/logo.svg" alt="logo"></div>
+				<a href="" class="header__button button button--blue text text--medium">Get Started</a>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__content content">
+				<div class="page__container">
+					<div class="content__body">
+						<div class="content__action">
+							<h1 class="content__title title title--h1">
+								Maximize skill, minimize budget
+							</h1>
+							<p class="content__text text text--medium">
+								Our modern courses across a range of in-demand skills will
+								give you the knowledge you need to live the life you want.
+							</p>
+							<a href="https://www.upwork.com/freelancers/~01a75a9a5d09ef15a6" target="_blank" class="content__button button button--gradient-pink">Get Started</a>
+						</div>
+						<div class="content__media">
+							<div class="content__image">
+								<img id="responsive-img" src="img/main-img.svg" alt="main">
+							</div>
+							<div class="content__label label label--1">
+								<div class="label__text text text--small">Members</div>
+								<div class="label__count title title--h2">29k</div>
+							</div>
+							<div class="content__label label label--2">
+								<div class="label__text text text--small">Course hours</div>
+								<div class="label__count title title--h2">1,451</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__cards cards">
+				<div class="cards__container">
+					<div class="cards__items">
+						<article class="cards__item item__card card card--gradient-pink">
+							<h2 class="card__title title title--white title--h3">
+								Check out our most popular courses!
+							</h2>
+						</article>
+						<article class="cards__item item__card card card--animation">
+							<div class="card__content">
+								<h3 class="card__title title title--h4">Animation</h3>
+								<p class="card__text text text--medium">Learn the latest animation techniques to create
+									stunning motion design and captivate your audience.</p>
+							</div>
+							<a href="https://www.upwork.com/freelancers/~01a75a9a5d09ef15a6" target="_blank" target="_blank" class="card__link">Get Started</a>
+						</article>
+						<article class="cards__item item__card card  card--design">
+							<div class="card__content">
+								<h3 class="card__title title title--h4">Design</h3>
+								<p class="card__text text text--medium">Create beautiful, usable interfaces to help shape the
+									future
+									of how the web looks.</p>
+							</div>
+							<a href="https://www.upwork.com/freelancers/~01a75a9a5d09ef15a6" target="_blank" class="card__link">Get Started</a>
+						</article>
+						<article class="cards__item item__card card card--photography">
+							<div class="card__content">
+								<h3 class="card__title title title--h4">Photography</h3>
+								<p class="card__text text text--medium">Explore critical fundamentals like lighting,
+									composition,
+									and
+									focus to capture exceptional photos.</p>
+							</div>
+							<a href="https://www.upwork.com/freelancers/~01a75a9a5d09ef15a6" target="_blank" class="card__link">Get Started</a>
+						</article>
+						<article class="cards__item item__card card card--crypto">
+							<div class="card__content">
+								<h3 class="card__title title title--h4">Crypto</h3>
+								<p class="card__text text text--medium">All you need to know to get started investing in crypto.
+									Go
+									from beginner to advanced with this 54 hour course.</p>
+							</div>
+							<a href="https://www.upwork.com/freelancers/~01a75a9a5d09ef15a6" target="_blank" class="card__link">Get Started</a>
+						</article>
+						<article class="cards__item item__card card  card--business">
+							<div class="card__content">
+								<h3 class="card__title title title--h4">Business</h3>
+								<p class="card__text text text--medium">A step-by-step playbook to help you start, scale, and
+									sustain
+									your business without outside investment.</p>
+							</div>
+							<a href="https://www.upwork.com/freelancers/~01a75a9a5d09ef15a6" target="_blank" class="card__link">Get Started</a>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<a href="#" class="footer__logo"><img src="img/logo-white.svg" alt="logo"></a>
+				<a href="" class="footer__button button button--gradient-purple text text--medium">Get Started</a>
+			</div>
+		</footer>
+	</div>
+	<!-- Документація: https://template.fls.guru/template-docs/modul-preloader.html -->
+	<div id="fls-preloader">
+		<!-- Скріпт прелоадера -->
+		<script>
+			function preloader() {
+				const preloaderImages = document.querySelector('[data-preloader]') ? document.querySelectorAll('[data-preloader] img') : document.querySelectorAll('img');
+				const preloaderContainer = document.querySelector('#fls-preloader');
+				if (preloaderImages.length) {
+					const preloaderStyleTemplate = `
+                <style>
+                    * {
+                        padding: 0px;
+                        margin: 0px;
+                        border: 0px;
+                        box-sizing: border-box;
+                    }
+                    /* Головний блок */
+                    .fls-preloader{
+                        pointer-events: none;
+                        z-index: -1;
+                        position: fixed;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+								
+                        display: flex;
+								flex-direction: column;
+                        justify-content:center;
+                        align-items: center;
+                    }
+
+						.fls-preloader__logo {
+							margin-bottom: 5px;
+						}
+
+						.progress {
+							height: 4.5px;
+							width: 145.6px;
+							background: linear-gradient(#666ca3 0 0),
+								linear-gradient(#666ca3 0 0),
+								#f74780;
+							background-size: 60% 100%;
+							background-repeat: no-repeat;
+							animation: progress-7x9cg2 3s infinite;
+						}
+
+						@keyframes progress-7x9cg2 {
+							0% {
+								background-position: -150% 0,-150% 0;
+							}
+
+							66% {
+								background-position: 250% 0,-150% 0;
+							}
+
+							100% {
+								background-position: 250% 0, 250% 0;
+							}
+						}
+
+                    .lock body{
+                        overflow: hidden;
+                        touch-action: none;
+                        overscroll-behavior: none;
+                    }
+                    .loading body>*:not(.fls-preloader){
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                    .loaded body>*:not(.fls-preloader){
+                        transition: opacity 0.5s ease 0s;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                </style>`;
+
+					document.head.insertAdjacentHTML("beforeend", preloaderStyleTemplate);
+
+					const preloaderTemplate = `
+                    <div class="fls-preloader">
+						  		<div class="fls-preloader__logo"><img src="img/logo.svg" alt="logo"></div>
+                        <div class="progress"></div>
+                    </div>`;
+					document.body.insertAdjacentHTML("beforeend", preloaderTemplate);
+
+					const
+						preloader = document.querySelector('.fls-preloader'),
+						htmlDocument = document.documentElement;
+
+					let imagesLoadedCount = progress = 0;
+
+					htmlDocument.classList.add('loading');
+					htmlDocument.classList.add('lock');
+
+					preloaderImages.forEach(preloaderImage => {
+						const imgClone = document.createElement('img');
+						if (imgClone) {
+							imgClone.onload = imageLoaded;
+							imgClone.onerror = imageLoaded;
+							preloaderImage.dataset.src ? imgClone.src = preloaderImage.dataset.src : imgClone.src = preloaderImage.src;
+						}
+					});
+
+					function imageLoaded() {
+						imagesLoadedCount++;
+						progress = Math.round((100 / preloaderImages.length) * imagesLoadedCount);
+						if (progress >= 100) {
+							addLoadedClass();
+						}
+					}
+
+					function addLoadedClass() {
+						htmlDocument.classList.add('loaded');
+						htmlDocument.classList.remove('lock');
+						htmlDocument.classList.remove('loading');
+						setTimeout(() => {
+							preloader.remove();
+							preloaderContainer.remove();
+						}, 500);
+					}
+				} else {
+					preloaderContainer.remove();
+				}
+			}
+			preloader();
+		</script>
+	</div>
+	<script src="js/app.min.js?_v=20240729115519"></script>
+</body>
+
+</html>
